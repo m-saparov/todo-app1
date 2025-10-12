@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Kitob o'qish",
+        "description": "Python haqida kitob",
+        "category": "study",
+        "date": "12-09-2025 08:23",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "name": "GYM",
+        "description": "Sport zalda mashq",
+        "category": "health",
+        "date": "12-10-2025 08:23",
+        "completed": true
+    },
+    {
+        "id": 3,
+        "name": "so'z yodlash",
+        "description": "study",
+        "category": "study",
+        "date": "12-10-2025 20:53",
+        "completed": false
+    }
+]
