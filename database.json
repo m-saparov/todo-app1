@@ -2,25 +2,37 @@
     {
         "id": 1,
         "name": "Kitob o'qish",
-        "description": "Python haqida kitob",
-        "category": "study",
-        "date": "12-09-2025 08:23",
-        "completed": false
+        "description": "Python haqida kitob o'qish",
+        "category": "Study",
+        "due_date": "12/09/2025",
+        "created_date": "10/10/2025, 09:15:20",
+        "status": false
     },
     {
         "id": 2,
         "name": "GYM",
-        "description": "Sport zalda mashq",
-        "category": "health",
-        "date": "12-10-2025 08:23",
-        "completed": true
+        "description": "Sport zalda mashq qilish",
+        "category": "Health",
+        "due_date": "12/10/2025",
+        "created_date": "10/10/2025, 10:20:50",
+        "status": false
     },
     {
         "id": 3,
-        "name": "so'z yodlash",
-        "description": "study",
-        "category": "study",
-        "date": "12-10-2025 20:53",
-        "completed": false
+        "name": "So'z yodlash",
+        "description": "Inglizcha so'zlarni yodlash",
+        "category": "Study",
+        "due_date": "14/10/2025",
+        "created_date": "10/10/2025, 21:05:10",
+        "status": true
+    },
+    {
+        "id": 4,
+        "name": "Test",
+        "description": "Dkjf",
+        "category": "Djhb",
+        "due_date": "15/12/2025",
+        "created_date": "15/10/2025, 21:10:57",
+        "status": true
     }
 ]

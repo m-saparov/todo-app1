@@ -1,5 +1,10 @@
-import sys
-from src.commands import add_task, list_tasks, update_task, delete_task, mark_completed
+from .commands import (
+    add_task,
+    show_tasks,
+    update_task,
+    delete_task,
+    mark_completed
+)
 
 
 def print_menu():
@@ -9,7 +14,7 @@ def print_menu():
     print("3. Update Task")
     print("4. Delete Task")
     print("5. Mark Completed")
-    print("6. Exit")
+    print("6. Exit\n")
 
 
 def main():
@@ -18,32 +23,17 @@ def main():
         choice = input("Select option: ").strip()
 
         if choice == "1":
-            name = input("Task name: ").strip()
-            description = input("Description: ").strip()
-            category = input("Category: ").strip()
-            add_task(name, description, category)
-
+            add_task()
         elif choice == "2":
-            list_tasks()
-
+            show_tasks()
         elif choice == "3":
-            task_id = int(input("Enter Task ID: "))
-            name = input("New name (leave empty to skip): ").strip()
-            description = input("New description (leave empty to skip): ").strip()
-            category = input("New category (leave empty to skip): ").strip()
-            update_task(task_id, name or None, description or None, category or None)
-
+            update_task()
         elif choice == "4":
-            task_id = int(input("Enter Task ID: "))
-            delete_task(task_id)
-
+            delete_task()
         elif choice == "5":
-            task_id = int(input("Enter Task ID: "))
-            mark_completed(task_id)
-
+            mark_completed()
         elif choice == "6":
             print("Dasturdan chiqildi.")
-            sys.exit()
-
+            break
         else:
-            print("Noto'g'ri tanlov, qaytadan urinib ko'ring.")
+            print("❌ Noto'g'ri tanlov!")
